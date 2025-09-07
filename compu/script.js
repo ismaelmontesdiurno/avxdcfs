@@ -1,0 +1,1 @@
+// Aquí podemos agregar interactividad más adelante

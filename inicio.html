@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Nuestro Noticiero</title>
+    <style>
+        /* Fondo y estilo general */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e722b, #2a9833); /* fondo profesional degradado azul */
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        /* Estilo de los botones */
+        .btn {
+            padding: 15px 35px;
+            margin: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-desktop {
+            background-color: #ff9800;
+            color: #fff;
+        }
+
+        .btn-desktop:hover {
+            background-color: #e68a00;
+        }
+
+        .btn-mobile {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .btn-mobile:hover {
+            background-color: #43a047;
+        }
+
+        /* Fondo adicional estilo “tarjeta” */
+        .selector {
+            background-color: rgba(0,0,0,0.5);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="selector">
+        <h1>Bienvenido a Nuestro Noticiero</h1>
+        <p>Desde aquí nos conectamos contigo, ya sea desde tu computadora o tu dispositivo móvil. Por favor, selecciona la versión que deseas ver para la mejor experiencia.</p>
+        <button class="btn btn-desktop" onclick="location.href='compu/index.html'">Versión Computadora</button>
+        <button class="btn btn-mobile" onclick="location.href='cel/index.html'">Versión Celular</button>
+    </div>
+</body>
+</html>

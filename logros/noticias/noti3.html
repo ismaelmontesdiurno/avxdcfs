@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticia Detalle</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <img src="logo.png" alt="Logo" class="logo-img">
+      <span class="imd">IMD</span>
+    </div>
+    <div class="nav-right">
+      <button class="btn-envivo">En vivo</button>
+      <span class="lupa">🔍</span>
+    </div>
+  </header>
+
+  <!-- Menú lateral -->
+ <!-- Menú lateral -->
+  <nav class="menu-lateral" id="menu-lateral">
+    <div class="menu-header">
+      <h2>IMD</h2>
+      <span class="cerrar" id="cerrar-menu">✖</span>
+    </div>
+    <ul>
+      <li><a href="../../index.html" >Inicio</a></li>
+      <li><a href="../noticia1.html"><span class="color rojo"></span>Eventos</a></li>
+      <li><a href="../../logros/noticia2.html"><span class="color azul"></span>Logros</a></li>
+      <li><a href="../../actualizaciones/noticia3.html"><span class="color verde"></span>Actualizaciones</a></li>
+    </ul>
+  </nav>
+  <!-- Contenido noticia -->
+  <main class="noticia-detalle">
+
+    <!-- Título principal -->
+    <div class="noticia-titulo">
+      <h1>Celebración del Día del Libro en la Unidad Educativa Ismael Montes</h1></div>
+      <p>Con una jornada especial dedicada a fomentar la lectura entre 
+        los estudiantes. Durante el día, se realizaron actividades que 
+        destacaron la importancia de la lectura y permitieron a los niños 
+        sumergirse en sus libros, fortaleciendo el hábito desde temprana 
+        edad.</p>
+    </div>
+
+    <!-- Botones sociales -->
+    <div class="social-share">
+      <a href="#" class="btn-social whatsapp">WhatsApp</a>
+      <a href="#" class="btn-social facebook">Facebook</a>
+      <a href="#" class="btn-social youtube">YouTube</a>
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="noticia-imagen">
+      <img src="fotos/foto2.jpg" alt="Imagen de la noticia">
+      
+      <!-- Fecha y editor debajo de la imagen -->
+<div class="noticia-fecha-editor">
+  <p class="fecha">Fecha: 06/09/2025</p>
+  <p class="editor">Editor: Saul Pedrazas</p>
+</div>
+
+      <div class="noticia-texto">
+        <p>
+          Día del Libro en la Unidad Educativa Ismael Montes
+          Hoy, 6 de septiembre, se conmemoró el Día del Libro 
+          en la Unidad Educativa Ismael Montes. A diferencia de
+          una jornada escolar común, este día se destacó por la 
+          dedicación de un tiempo especial para fomentar 
+          el hábito de la lectura entre los estudiantes.
+          Desde primera hora, tanto docentes como alumnos se 
+          unieron a esta celebración llevando su libro preferido, 
+          aprovechando espacios dentro de la jornada escolar para 
+          leer y reflexionar sobre la importancia de la lectura en 
+          nuestra vida diaria.
+        </p>
+      </div>
+    </div>
+
+    <!-- Video vertical -->
+    <div class="noticia-video">
+      <video controls>
+        <source src="video/video1.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+
+    <!-- Texto adicional -->
+    <div class="noticia-texto">
+      <p>
+        Durante las clases, los profesores 
+        realizaron un reforzamiento del valor de la lectura, resaltando 
+        la importancia de la literatura en el desarrollo intelectual y 
+        emocional de los estudiantes. Además, se llevaron a cabo actividades de análisis y discusión sobre los textos, 
+        permitiendo que los niños reflexionaran y compartieran sus pensamientos sobre lo que estaban leyendo.
+
+        Un momento destacable fue cuando los pequeños de la unidad 
+        educativa, en un ambiente de total concentración y entusiasmo, se 
+        sumergieron en sus libros, demostrando su interés por aprender y 
+        descubrir nuevas historias. Sin duda, este tipo de actividades 
+        contribuyen a fortalecer el amor por la lectura y a fomentar el 
+        pensamiento crítico desde una edad temprana.
+      </p>
+    </div>
+
+    <!-- Noticias pequeñas tipo lista -->
+    <section class="noticias-lista">
+      <h2>Más noticias</h2>
+
+      <a class="noticia-item">
+        <img src="fotos/foto1.jpg" alt="Noticia 1">
+        <div class="contenido">
+          <h3>Una mañana de convivecia</h3>
+          <span class="fecha">06/09/2025 - 11:35</span>
+        </div>
+      </a>
+
+      <a href="../../eventos/noticias/noti3.html" class="noticia-item">
+        <img src="fotos/foto2.jpg" alt="Noticia 2">
+        <div class="contenido">
+          <h3>Dia del libro</h3>
+          <span class="fecha">06/09/2025 - 9:42</span>
+        </div>
+      </a>
+
+      <a class="noticia-item">
+        <img src="fotos/foto3.jpg" alt="Noticia 3">
+        <div class="contenido">
+          <h3>Marcha del 6 de agosto</h3>
+          <span class="fecha">06/08/2025 - 10:31</span>
+        </div>
+      </a>
+    </section>
+  </main> <!-- ✅ main cerrado correctamente -->
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Unidad Educativa Ismael Montes - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu-lateral');
+    const overlay = document.getElementById('overlay');
+    const cerrar = document.getElementById('cerrar-menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.add('activo');
+      overlay.classList.add('activo');
+    });
+
+    cerrar.addEventListener('click', () => {
+      menu.classList.remove('activo');
+      overlay.classList.remove('activo');
+    });
+
+    overlay.addEventListener('click', () => {
+      menu.classList.remove('activo');
+      overlay.classList.remove('activo');
+    });
+  </script>
+</body>
+</html>

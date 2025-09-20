@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticia Detalle</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <img src="logo.png" alt="Logo" class="logo-img">
+      <span class="imd">IMD</span>
+    </div>
+    <div class="nav-right">
+      <button class="btn-envivo">En vivo</button>
+      <span class="lupa">🔍</span>
+    </div>
+  </header>
+
+<!-- Menú lateral -->
+ <!-- Menú lateral -->
+  <nav class="menu-lateral" id="menu-lateral">
+    <div class="menu-header">
+      <h2>IMD</h2>
+      <span class="cerrar" id="cerrar-menu">✖</span>
+    </div>
+    <ul>
+      <li><a href="../../index.html" >Inicio</a></li>
+      <li><a href="../noticia1.html"><span class="color rojo"></span>Eventos</a></li>
+      <li><a href="../../logros/noticia2.html"><span class="color azul"></span>Logros</a></li>
+      <li><a href="../../actualizaciones/noticia3.html"><span class="color verde"></span>Actualizaciones</a></li>
+    </ul>
+  </nav>
+  <!-- Contenido noticia -->
+  <main class="noticia-detalle">
+
+    <!-- Título principal -->
+    <div class="noticia-titulo">
+      <h1>Conmemorando la Guerra del Chaco en la Unidad Educativa Ismael Montes</h1> </div>
+      <div> <p>El evento, organizado 
+        por los maestros de Ciencias Sociales, reunió a 16 equipos 
+        de estudiantes que se enfrentaron en una competencia de preguntas
+         y respuestas, promoviendo el trabajo en equipo y el conocimiento.
+</p></div>
+
+    <!-- Botones sociales -->
+    <div class="social-share">
+      <a href="#" class="btn-social whatsapp">WhatsApp</a>
+      <a href="#" class="btn-social facebook">Facebook</a>
+      <a href="#" class="btn-social youtube">YouTube</a>
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="noticia-imagen">
+      <img src="fotos/portada.jpg" alt="Imagen de la noticia">
+      
+      <!-- Fecha y editor debajo de la imagen -->
+<div class="noticia-fecha-editor">
+  <p class="fecha">Fecha: 29/06/2025</p>
+  <p class="editor">Editor: Saul Pedrazas</p>
+</div>
+
+      <div class="noticia-texto">
+        <p>
+          Rally Académico del Saber: Conmemoración de la Guerra del Chaco en la Unidad Educativa Ismael Montes
+
+El 29 de junio, la Unidad Educativa Ismael Montes vivió la cuarta 
+versión del Rally Académico del Saber, un evento que conmemora la Guerra 
+del Chaco, organizado por los maestros del área de Ciencias Sociales. 
+Este encuentro, realizado en la biblioteca de la escuela, contó con la 
+participación de autoridades militares, la mesa directiva, profesores, 
+el director de la unidad educativa y estudiantes.
+
+        </p>
+      </div>
+    </div>
+
+    <!-- Video vertical -->
+    <div class="noticia-video">
+      <video controls>
+        <source src="video/video1.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+
+    <!-- Texto adicional -->
+    <div class="noticia-texto">
+      <p>
+        El evento se desarrolló por la tarde, y los estudiantes 
+        participaron en equipos conformados por un representante de cada 
+        curso, desde Primero hasta Sexto de primaria, incluyendo paralelos
+         A, B, C y D. En total, se formaron 16 equipos que se enfrentaron 
+         en diversas rondas de preguntas hasta llegar a la final.
+
+Cada ronda consistía en que un miembro de cada equipo levantaba la mano al 
+escuchar una pregunta, que estaba proyectada en una pantalla y leída en voz
+ alta. Los estudiantes contaban con 30 segundos para responder. El equipo 
+ que respondía correctamente avanzaba, y así se fue desarrollando el torneo
+  hasta que el equipo con más respuestas correctas se coronó ganador. Los 
+  jurados fueron los encargados de revisar y calificar las respuestas, 
+  asegurando la transparencia del evento.
+  El Rally Académico del Saber no solo sirvió para conmemorar un hecho 
+  histórico importante para Bolivia, sino que también promovió el trabajo
+   en equipo, el conocimiento y el espíritu competitivo entre los 
+   estudiantes, consolidándose como una tradición educativa en la unidad.
+
+
+      </p>
+    </div>
+
+    <!-- Noticias pequeñas tipo lista -->
+    <section class="noticias-lista">
+      <h2>Más noticias</h2>
+
+      <a href="../../eventos/noticias/noti2.html" class="noticia-item">
+        <img src="fotos/foto1.jpg" alt="Noticia 1">
+        <div class="contenido">
+          <h3>Una mañana de convivecia</h3>
+          <span class="fecha">06/09/2025 - 11:35</span>
+        </div>
+      </a>
+
+      <a href="../../eventos/noticias/noti3.html" class="noticia-item">
+        <img src="fotos/foto2.jpg" alt="Noticia 2">
+        <div class="contenido">
+          <h3>Dia del libro</h3>
+          <span class="fecha">06/09/2025 - 9:42</span>
+        </div>
+      </a>
+
+      <a href="../../actualizaciones/noticias/noti3.html" class="noticia-item">
+        <img src="fotos/foto3.jpg" alt="Noticia 3">
+        <div class="contenido">
+          <h3>Marcha del 6 de agosto</h3>
+          <span class="fecha">06/08/2025 - 10:31</span>
+        </div>
+      </a>
+    </section>
+  </main> <!-- ✅ main cerrado correctamente -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Unidad Educativa Ismael Montes - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu-lateral');
+    const overlay = document.getElementById('overlay');
+    const cerrar = document.getElementById('cerrar-menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.add('activo');
+      overlay.classList.add('activo');
+    });
+
+    cerrar.addEventListener('click', () => {
+      menu.classList.remove('activo');
+      overlay.classList.remove('activo');
+    });
+
+    overlay.addEventListener('click', () => {
+      menu.classList.remove('activo');
+      overlay.classList.remove('activo');
+    });
+  </script>
+</body>
+</html>

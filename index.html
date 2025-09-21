@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unidad Educativa Ismael Montes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <img src="img/logo.png" alt="Logo" class="logo-img">
+      <span class="imd">IMD</span>
+    </div>
+    <div class="nav-right">
+      <button class="btn-envivo">En vivo</button>
+      <span class="lupa">🔍</span>
+    </div>
+  </header>
+
+  <!-- Menú lateral -->
+<nav class="menu-lateral" id="menu-lateral">
+  <div class="menu-header">
+    <h2>IMD</h2>
+    <span class="cerrar" id="cerrar-menu">✖</span>
+  </div>
+  <ul>
+    <li><a href="eventos/noticia1.html"><span class="color rojo"></span>Eventos</a></li>
+    <li><a href="logros/noticia2.html"><span class="color azul"></span>Logros</a></li>
+    <li><a href="actualizaciones/noticia3.html"><span class="color verde"></span>Actualizaciones</a></li>
+  </ul>
+</nav>
+
+<!-- Fondo oscuro para cerrar al hacer clic -->
+<div class="overlay" id="overlay"></div>
+
+  <!-- Título antes de la imagen principal -->
+<section class="titulo-principal">
+  <h1>Unidad Educativa Ismael Montes (Diurno)</h1>
+</section>
+
+
+  <!-- Imagen principal -->
+  <section class="imagen-principal">
+    <img src="img/foto1.jpg" alt="Foto principal">
+  </section>
+
+  <!-- Video destacado -->
+  <section class="en-vivo">
+    <h2 class="titulo-envivo">Video Destacado</h2>
+    <div class="contenedor-envivo">
+      <iframe src="https://www.youtube.com/embed/50MV9qRTl8w"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Noticias rectangulares -->
+<section class="noticias">
+  <h2>Noticias recientes</h2>
+
+  <div class="noticia" onclick="window.location.href='logros/noticias/noti2.html'">
+    <img src="img/foto5.jpg" alt="Evento">
+    <div class="texto-noticia">
+      <h3>Evento destacado</h3>
+      <p>Una mañana de convivencia y tradición</p>
+    </div>
+  </div>
+
+  <div class="noticia" onclick="window.location.href='logros/noticias/noti1.html'">
+    <img src="img/foto6.jpg" alt="Logro">
+    <div class="texto-noticia">
+      <h3>Nuevo logro escolar</h3>
+      <p>Dconmemorando la Guerra del Chaco. El evento 
+          reunió a 16 equipos de estudiantes que se enfrentaron</p>
+    </div>
+  </div>
+
+  <div class="noticia" onclick="window.location.href='eventos/noticias/noti1.html'" >
+    <img src="img/foto7.jpg" alt="Actualización">
+    <div class="texto-noticia">
+      <h3>Actualización importante</h3>
+      <p>conmemorando la Guerra del Chaco. El evento 
+          reunió a 16 equipos de estudiantes que se enfrentaron</p>
+    </div>
+  </div>
+</section>
+ <!-- Galería audiovisual -->
+<h2 class="titulo-videos">Galería Audiovisual</h2>
+<div class="videos-scroll">
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/qNjBkTsvZBU?si=2tYBilletb1Cpqtl&rel=0&modestbranding=1&playsinline=1"
+      title="YouTube video 1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/Jo9oJTKHDg8?si=G0xQDzO3nkZPRwZz&rel=0&modestbranding=1&playsinline=1"
+      title="YouTube video 2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/WSstIesZJHg?si=7YYkgc4NjlgwjA_w&rel=0&modestbranding=1&playsinline=1"
+      title="YouTube video 3"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+</div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Unidad Educativa Ismael Montes - Nacimos Para Vencer</p>
+  </footer>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu-lateral');
+  const overlay = document.getElementById('overlay');
+  const cerrar = document.getElementById('cerrar-menu');
+
+  // Abrir menú
+  toggle.addEventListener('click', () => {
+    menu.classList.add('activo');
+    overlay.classList.add('activo');
+  });
+
+  // Cerrar con la X
+  cerrar.addEventListener('click', () => {
+    menu.classList.remove('activo');
+    overlay.classList.remove('activo');
+  });
+
+  // Cerrar clic fuera
+  overlay.addEventListener('click', () => {
+    menu.classList.remove('activo');
+    overlay.classList.remove('activo');
+  });
+</script>
+
+</body>
+</html>
